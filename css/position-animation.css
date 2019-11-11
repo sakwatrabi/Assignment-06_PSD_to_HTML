@@ -1,0 +1,380 @@
+header {
+	background: #f6f9f9;
+}
+
+header .row {
+	align-items: center;
+	padding: 3px;
+}
+
+.logo {
+	flex-basis: 20%;
+	max-width: 20%;
+}
+
+.logo a img {
+	justify-content: flex-start;
+}
+
+nav {
+	flex-basis: 80%;
+	max-width: 80%;
+}
+
+nav ul {
+	justify-content: flex-end;
+}
+
+nav ul li {
+	padding: 0 25px;
+}
+nav ul li a:hover {
+    color: #15A4FA;
+}
+
+
+nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 38px;
+	color: #2d3950;
+	font-family: "Lato";
+	font-weight: 700;
+}
+
+.banner_section {
+	background-image: url(../images/Strict.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.banner_content {
+	flex-basis: 55%;
+	max-width: 55%;
+	text-align: center;
+}
+
+.banner_section .row {
+	justify-content: center;
+	min-height: 800px;
+	align-content: center;
+}
+
+.banner_content h2 {
+	font-size: 120px;
+	letter-spacing: 3px;
+	line-height: 47px;
+	color: #ffffff;
+	font-family: "Lato";
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.banner_content span {
+	width: 600px;
+	height: 2px;
+	background: #15a4fa;
+	display: block;
+}
+
+.banner_content p {
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 47px;
+	color: #ffffff;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: center;
+}
+
+.banner_content button {
+	font-size: 18px;
+	letter-spacing: 0px;
+	line-height: 47px;
+	color: #ffffff;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: center;
+	background: transparent;
+	border: 1px solid #15a4fa;
+	border-radius: 5px;
+}
+
+.arrow {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	font-size: 50px;
+	color: white;
+	transform: translateX(-50%);
+}
+
+.about_section {
+	background: #f6f9f9;
+	padding: 55px;
+}
+
+.about h2 {
+	font-size: 40px;
+	letter-spacing: 1px;
+	color: #2d3950;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: center;
+}
+
+.about P {
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 32px;
+	color: #999999;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: center;
+}
+
+.features_section {
+	padding: 65px 0;
+}
+
+.feature_box {
+	max-width: 33.33%;
+	flex-basis: 33.33%;
+	text-align: center;
+	padding: 20px 15px;
+}
+
+.feature-icon {
+	height: 100px;
+	width: 100px;
+	background-color: background: #00b7ea;
+	background: -moz-linear-gradient(left, #00b7ea 0%, #00a4fc 51%, #00a1ff 52%, #00a1ff 52%, #00a1ff 52%, #00a5ff 53%, #5fc3ff 100%);
+	background: -webkit-linear-gradient(left, #00b7ea 0%, #00a4fc 51%, #00a1ff 52%, #00a1ff 52%, #00a1ff 52%, #00a5ff 53%, #5fc3ff 100%);
+	background: linear-gradient(to right, #00b7ea 0%, #00a4fc 51%, #00a1ff 52%, #00a1ff 52%, #00a1ff 52%, #00a5ff 53%, #5fc3ff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#5fc3ff', GradientType=1);
+	font-size: 50px;
+	color: white;
+	justify-content: center;
+	text-align: center;
+	padding: 15px 0;
+	margin: auto;
+}
+
+.feature_box h3 {
+	font-size: 22px;
+}
+
+.feature_box p {
+	font-size: 15px;
+}
+
+.showcase_section {
+	background: #f6f9f9;
+	padding: 30px 0 100px 0;
+	scroll-behavior: ;
+}
+
+.showcase {
+	flex-basis: 33.33%;
+	max-width: 33.33%;
+	padding: 15px 15px;
+}
+
+.showcase_detail {
+	position: relative;
+}
+
+.showcase_detail:hover .overlay {
+	opacity: 1;
+	transition: all 0.4s;
+	height: 100%;
+}
+
+.showcase_detail .overlay {
+	height: 0;
+	width: 100%;
+	background: #27b1ffc7;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.showcase_detail .plus {
+	position: absolute;
+	color: #fff;
+	top: 40%;
+	left: 40%;
+	border: 1px solid white;
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	border-radius: 4px;
+	display: block;
+	text-align: center;
+	transform: translate(-40%, -50%);
+	opacity: 0;
+}
+
+.showcase_detail:hover .plus {
+	opacity: 1;
+	transition: all 0.6s;
+	top: 50%;
+}
+
+.showcase_detail .link {
+	position: absolute;
+	color: #fff;
+	top: 40%;
+	left: 55%;
+	border: 1px solid white;
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	border-radius: 4px;
+	display: block;
+	text-align: center;
+	transform: translate(-55%, -50%);
+	opacity: 0;
+}
+
+.showcase_detail:hover .link {
+	opacity: 1;
+	transition: all 0.6s;
+	top: 50%;
+}
+
+.contact_section {
+	background-image: url(../images/contact.png);
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	min-width: 100vh;
+	clear: both;
+	display: block;
+	padding: 29px;
+	overflow: hidden;
+	padding: ;
+}
+
+.contact_overlay {
+	background: #2c374a49;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+	scroll-behavior: ;
+}
+
+.contact_section .row {
+	justify-content: center;
+}
+
+.contact_heading h2 {
+	/*! padding: 40px; */
+	color: #fff;
+	text-align: center;
+}
+
+.contact_heading p {
+	text-align: center;
+	padding-top: -21px;
+}
+
+.contact_form {
+	flex-basis: 50%;
+	max-width: 50%;
+}
+
+.contact_form form {
+	/*! padding: 10px; */
+	/*! width: 100%; */
+}
+
+.contact_form input,
+.contact_form textarea {
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 15px;
+	border: 1px solid #999;
+	background: transparent;
+	color: #999;
+	border-radius: 5px;
+	padding: 20px;
+	display: ;
+}
+
+.contact_form placeholder {
+	font-size: 15px;
+	letter-spacing: 0px;
+	color: #999999;
+	font-family: "Lato";
+	font-weight: 400;
+}
+
+.contact_form form ul {
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.contact_form form ul li {
+	flex-basis: 50%;
+	max-width: 50%;
+}
+
+.contact_form form ul li input[type="checkbox"] {
+	width: auto;
+}
+
+.contact_form form ul li input[type="submit"] {
+	font-size: 18px;
+	color: #fff;
+	border: 1px solid #15a4fa;
+	height: 30px;
+	width: 100px;
+	float: right;
+	text-align: center;
+	line-height: 0px;
+}
+
+.copyright {
+	max-width: 50%;
+	flex-basis: 50%;
+	float: right;
+}
+
+.socialicon {
+	max-width: 50%;
+	flex-basis: 50%;
+}
+
+footer {
+	padding: 15px 0;
+}
+
+footer .row {
+	align-items: center;
+}
+
+footer li {
+	/*! flex-basis: 25%; */
+	padding: 0 5px;
+	background: #15a4fa;
+	margin-left: 5px;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+footer li a {
+	color: white;
+}
+
+footer ul {
+	justify-content: flex-end;
+}
